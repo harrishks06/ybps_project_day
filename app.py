@@ -182,3 +182,17 @@ if not st.session_state.auth["logged_in"]:
     login_view()
 else:
     main_app()
+
+import re, streamlit as st
+st.title("Attendee details")
+name = st.text_input("Name", placeholder="Enter your full name")
+phone = st.text_input("Phone", placeholder="10-digit mobile")
+if st.button("Continue"):
+if not name or not phone:
+st.error("Both name and phone are required.")
+elif not re.fullmatch(r"[A-Za-z ]{1,50}", name):
+st.error("Name must have only letters and spaces.")
+elif not re.fullmatch(r"\d{10}", phone):
+st.error("Phone must be exactly 10 digits.")
+else:
+st.success("Thanks! Proceeding...")
