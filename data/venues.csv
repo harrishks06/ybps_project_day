@@ -1,0 +1,4 @@
+id,name,lat,lon,desc,building,floor
+1,Robotics Demo,11.066900,76.916800,"Cutting-edge bots in action. Student-led demos.","Block A","Ground"
+2,Science Expo,11.067200,76.916400,"Live experiments and models. Physics & Chem highlights.","Block B","First"
+3,Coding Showcase,11.067050,76.916600,"Apps and games by students. Try them hands-on.","IT Lab","Second"
